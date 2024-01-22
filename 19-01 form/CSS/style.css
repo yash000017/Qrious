@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    /* background-color: bisque; */
+    padding: 1px;
+}
+
+.form{
+    margin: 50px 300px;
+    background-color: black;
+    padding: 20px 20px 40px 20px;
+    border-radius: 10px;
+}
+
+.form-text .form-text-h1{
+    color:white;
+    font-family: Montserrat, sans-serif ;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+}
+
+input:invalid{
+    border: 2px dashed red;
+}
+  
+input:invalid:required{
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+  
+input:valid{
+    border: 2px solid black;
+}
+
+.form .form-wrapper{
+    padding: 0 20px;
+}
+
+.form .form-wrapper .form-wrapper-1{
+    padding-bottom: 20px;
+    border: hidden;
+}
+
+.form .form-wrapper .form-wrapper-1 input{
+    height: 50px;
+    width: 100%;
+    border: hidden;
+    border-radius: 10px;
+    color: #111111;
+}
+
+.form .form-wrapper .form-wrapper-1 .details{
+    font-size: 1rem;
+    color:#ffffff;
+    font-family: 'Open Sans',sans-serif;
+    border: hidden;
+    line-height: 1.5;
+}
+
+.form .form-wrapper .form-wrapper-message .details{
+    font-size: 1rem;
+    color:#ffffff;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.5;
+}
+
+.form .form-wrapper .form-wrapper-message{
+    padding-bottom: 20px;
+}
+
+.form .form-wrapper .form-wrapper-message input{
+    height: 120px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.form .form-wrapper .form-wrapper-checkbox{
+    padding-bottom: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.form .form-wrapper .form-wrapper-checkbox-1{
+    padding-bottom: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.form .form-wrapper .form-wrapper-checkbox .details{
+    font-size: 18px;
+    padding-bottom: 13px;
+}
+
+.form .form-wrapper .form-wrapper-checkbox-1 .details{
+    font-size: 18px;
+    padding-bottom: 0px;
+}
+
+.method{
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.form-wrapper-range{
+    padding-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.form-wrapper-range .details{
+    text-align: center;
+}
+
+
+.form .form-wrapper .form-wrapper-submit{
+    
+}
+
+.form .form-wrapper .form-wrapper-submit input{
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #e5521d;
+    font-size: 20px;
+    color: white;
+}
+
+datalist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    max-width: 100px;
+}
+  
+option{
+    padding: 0;
+    padding-right: 180px;
+    font-size: 16px;
+}
+  
+input[type="range"] {
+    width: 400px;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 20px; */
+}
+
+.red{
+    color: red;
+}
+
+.form-wrapper-range{
+    text-align: center;
+}
+
+.values{
+    padding-left: 130px;
+}

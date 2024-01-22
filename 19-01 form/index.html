@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section class="home">
+
+        <div class="form">
+
+            <div class="form-text">
+                <h1 class="form-text-h1" id="count">Entry Count : 0</h1>
+            </div>
+            
+            <div class="form-wrapper">
+                <form id="myForm" action="#">
+                    <div class="form-wrapper-1">
+                        <div class="details">Name *</div>
+                        <input type="text" class="details-wrapper-nam" id="name" placeholder="Enter your Name" >
+                        <span id="namee" class="red"></span>
+                    </div>
+                      
+                    <div class="form-wrapper-1">
+                        <div class="details">Email *</div>
+                        <input type="text" class="details-wrapper-email" id="email" placeholder="Enter your Email-Address" >
+                        <span id="emaill" class="red"></span>
+                    </div>
+
+                    <div class="form-wrapper-1">
+                        <div class="details">Mobile Number *</div>
+                        <input type="tel" class="details-wrapper-mobile" id="mobile" placeholder="Enter your Mobile Number">
+                        <span id="mobilee" class="red"></span>
+                    </div>
+
+                    <div class="flex">
+                        <div class="form-wrapper-checkbox">
+
+                            <div class="details">Gender :</div>
+    
+                            <input type="radio" class="male" name="gender" value="Male">
+                            <label>Male</label><br>
+                            <input type="radio" class="female" name="gender" value="Female">
+                            <label>Female</label><br>
+                            <input type="radio" class="prefer" name="gender" value="Prefer Not to Say">
+                            <label>Prefer not to say</label>
+                            <br>
+                            <span id="genderr" class="red"></span>
+                        </div>
+    
+                        <div class="form-wrapper-checkbox-1">
+                            <div class="details">Preferred Contact Method :</div><br>
+    
+                            <input type="checkbox" class="details-wrapper" placeholder="Preferred Contact Method" value="Email" name="check">
+                            <span class="method-email">Email</span><br>
+    
+                            <input type="checkbox" class="details-wrapper" placeholder="Preferred Contact Method" value="Call" name="check">
+                            <span class="method-phone">Call</span><br>
+    
+                            <input type="checkbox" class="details-wrapper" placeholder="Preferred Contact Method" value="Text" name="check">
+                            <span class="method-text">Text Message</span>
+                            <br>
+                            <span id="preff" class="red"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-wrapper-range">
+                        <label for="age">Seniority level :</label><br>
+                        <input type="range" class="" id="age" name="age" min="1" max="3" step="1" list="values">
+
+                        <datalist class="values">
+                            <option value="Fresher" label="Fresher"></option>
+                            <option value="Junior" label="Junior"></option>
+                            <option value="Senior" label="Senior"></option>
+                          </datalist>
+
+                          <span id="rangee" class="red"></span>
+                    </div>
+
+                    <div class="form-wrapper-submit">
+                        <input type="submit" class="details-wrapper" value="Submit your request" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
