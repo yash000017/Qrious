@@ -131,6 +131,17 @@ input:valid{
     color: white;
 }
 
+.user-data{
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #e5521d;
+    font-size: 20px;
+    color: white
+}
+
 datalist{
     display: flex;
     flex-direction: column;

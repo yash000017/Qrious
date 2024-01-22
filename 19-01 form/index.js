@@ -14,7 +14,7 @@ document.getElementById("myForm").addEventListener("submit", function(event){
     range= document.getElementById("age");
     form=document.getElementById("myForm");
 
-    // Validate name
+
     let userEr,emailEr,mobileEr,genderEr,contactEr,rangeEr;
 
     userEr = document.getElementById("namee");
@@ -36,7 +36,7 @@ document.getElementById("myForm").addEventListener("submit", function(event){
     userEr.textContent = "";
     }
 
-    // Validate email
+    
     if (email.value.trim() === "") {
     emailEr.textContent = "Email cannot be empty";
     email.focus();
@@ -49,7 +49,7 @@ document.getElementById("myForm").addEventListener("submit", function(event){
     emailEr.textContent = "";
     }
 
-    // Validate mobile number
+    
     if (!/^\d{10}$/.test(mobile.value)) {
     mobileEr.textContent = "Invalid mobile number";
     mobile.focus();
@@ -58,7 +58,7 @@ document.getElementById("myForm").addEventListener("submit", function(event){
     mobileEr.textContent = "";
     }
 
-    // Validate gender
+    
     var selectedGender = Array.from(gender).find(input => input.checked);
     if (!selectedGender) {
     genderEr.textContent = "Please select a gender";
@@ -68,7 +68,7 @@ document.getElementById("myForm").addEventListener("submit", function(event){
     genderEr.textContent = "";
     }
 
-    // Validate contact preference
+
     var selectedContact = Array.from(contact).filter(input => input.checked);
     if (selectedContact.length === 0) {
     contactEr.textContent = "Please select at least one option";
@@ -78,7 +78,7 @@ document.getElementById("myForm").addEventListener("submit", function(event){
     contactEr.textContent = "";
     }
 
-    // Validate seniority level
+    
     if (isNaN(range.value) || range.value < 0 || range.value > 2) {
     seniorityLevelError.textContent = "Please select a valid seniority level";
     range.focus();
@@ -86,6 +86,7 @@ document.getElementById("myForm").addEventListener("submit", function(event){
     } else {
     rangeEr.textContent = "";
     }
+
 // ll
 
     let record = new Array();
@@ -110,7 +111,6 @@ document.getElementById("myForm").addEventListener("submit", function(event){
 });
 
 function emailSyntax(email) {
-    // Use a regular expression for basic email format validation
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
@@ -119,7 +119,16 @@ function emailSyntax(email) {
 function updateEntryCount() {
     var existingEntries = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Display the entry count on the page
     document.getElementById("count").textContent = "Entry Count: " + existingEntries.length;
     console.log("helo");
 }
+
+// Entries
+
+let entry = document.getElementById("user-data-btn");
+
+function click(){
+    window.location.href = "entries.html";
+}
+
+entry.addEventListener('click', click);
